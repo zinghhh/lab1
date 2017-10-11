@@ -1,5 +1,5 @@
 package he;
-//the first change
+//one change
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
