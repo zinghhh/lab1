@@ -1,5 +1,5 @@
 package lab1;
-
+4
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
