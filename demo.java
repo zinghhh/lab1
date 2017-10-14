@@ -1,5 +1,5 @@
-package he;
-//one change
+package lab1;
+//change
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -169,8 +169,13 @@ public class demo {
 		jb2.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
 				getGraph("G://graph//out");
 				expressGraph("G://graph//out");
+=======
+				getGraph("E://A//JAVA//out");
+				expressGraph("E://A//JAVA//out");
+>>>>>>> otherlabel1
 			}
 		});
 		
@@ -190,7 +195,11 @@ public class demo {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				getPath();
+<<<<<<< HEAD
 				expressGraph("G://graph//outshortpath");
+=======
+				expressGraph("E://A//JAVA//outshortpath");
+>>>>>>> otherlabel1
 			}
 		});
 		jb6.addActionListener(new ActionListener() {

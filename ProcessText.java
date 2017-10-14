@@ -1,5 +1,5 @@
-package he;
-//one change
+package lab1;
+//change
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -271,14 +271,22 @@ public class ProcessText {
 			return "No ¡°"+words2+"¡± in the graph!";
 		}
 		String dotformat = getDotFormat(pathlist);
+<<<<<<< HEAD
 		showDirectedGraph(dotformat, "G://graph//outshortpath");
+=======
+		showDirectedGraph(dotformat, "E://A//JAVA//outshortpath");
+>>>>>>> otherlabel1
 		return shortpath;
 	}
 	//Ëæ»úÓÎ×ß
 	public static  void writeText()
 	{
 		flag=1;
+<<<<<<< HEAD
 		File file = new File("G://graph//randomtext.txt");
+=======
+		File file = new File("E://A//JAVA//randomtext.txt");
+>>>>>>> otherlabel1
 		try{
 			file.createNewFile();
 		}catch(IOException e){
