@@ -1,5 +1,5 @@
 package lab1;
-
+1
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
