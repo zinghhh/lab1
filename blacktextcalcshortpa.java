@@ -12,10 +12,10 @@ public class blacktextcalcshortpa {
 		protes.readText("E://A//JAVA//fff.txt");
 		String result="最短路径权值为：2  how-->next-->we";
 		assertEquals("用例1有问题",result,protes.calcShortestPath("How", "we"));
-		String result2="";
-		assertEquals("用例2有问题",result2,protes.calcShortestPath("Next", "#"));
-		String result3="";
-		assertEquals("用例3有问题",result3,protes.calcShortestPath("#", "Explore"));
+		String result2=new String();
+		assertNotEquals("用例2有问题",result2,protes.calcShortestPath("Next", "#"));
+		String result3=new String();
+		assertNotEquals("用例3有问题",result3,protes.calcShortestPath("#", "Explore"));
 		String result4="No “” and “” in the graph!";
 		assertEquals("用例4有问题",result4,protes.calcShortestPath("", ""));
 		String result5="No “s34jm” in the graph!";
