@@ -30,6 +30,7 @@ public class blacktextcalcshortpa {
 		assertEquals("用例9有问题",result9,protes.calcShortestPath("!???&&", ""));
 		String result10="nopath  are和how之间不可达";
 		assertEquals("用例10有问题",result10,protes.calcShortestPath("Are", "How"));
+		
 
 	}
 
