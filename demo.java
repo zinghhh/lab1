@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -24,7 +25,7 @@ public class demo {
 	private static JTextField jt1,jt2,jt3,jt4,jt5,jt6;
 	private static JTextField bridgewords,newtext,path,walk;
 	
-	private static ProcessText pt = new ProcessText();
+	private static Control ctrl = new Control();
 	public static void createFrame() {
 
 		//建立组件
@@ -106,23 +107,23 @@ public class demo {
 		int returnval = chooser.showOpenDialog(jb1);
 		if(returnval==JFileChooser.APPROVE_OPTION) {
 			jt1.setText(chooser.getSelectedFile().getAbsolutePath());
-			pt.readText(chooser.getSelectedFile().getAbsolutePath());
+			ctrl.readText(chooser.getSelectedFile().getAbsolutePath());
 		}
 	}
 	public static void getGraph(String filename) {
-		pt.showDirectedGraph(pt.getDotFormat(null),filename);
+		ctrl.showDirectedGraph(ctrl.getDotFormat(null),filename);
 		}
 
 	public static void queryBridge() {
 		String words1=jt2.getText();
 		String words2=jt3.getText();
-		bridgewords.setText(pt.queryBridgeWords(words1, words2));
+		bridgewords.setText(ctrl.queryBridgeWords(words1, words2));
 	}
 	public static void getNewText() {
-		newtext.setText(pt.generateNewText(jt4.getText()));
+		newtext.setText(ctrl.generateNewText(jt4.getText()));
 	}
 	public static void getPath() {
-		path.setText(pt.calcShortestPath(jt5.getText(), jt6.getText()));
+		path.setText(ctrl.calcShortestPath(jt5.getText(), jt6.getText()));
 	}
 	public static void expressGraph(String filename) {
 		//MyGraphics g = new MyGraphics(filename+".gif");
@@ -196,20 +197,20 @@ public class demo {
 		jb6.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				walk.setText(ProcessText.startWalk());
+				walk.setText(ctrl.startWalk());
 			}
 		});
 
 		jb7.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				walk.setText(ProcessText.randomWalk());
+				walk.setText(ctrl.randomWalk());
 			}
 		});
 		jb8.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ProcessText.writeText();
+				ctrl.writeText();
 			}
 		});
 	}

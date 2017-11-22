@@ -1,10 +1,10 @@
-package whitetest;
+package lab1;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import he.ProcessText;
+
 
 public class whitetest1 {
 
@@ -13,8 +13,8 @@ public class whitetest1 {
 		String words1="Next";
 		String words2="Any";
 		String expResult=null;
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
         
          assertEquals(expResult, result);
@@ -24,8 +24,8 @@ public class whitetest1 {
 		String words1="Are";
 		String words2="Any";
 		String expResult=null;
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
         
          assertEquals(expResult, result);
@@ -35,8 +35,8 @@ public class whitetest1 {
 		String words1="Explore";
 		String words2="We";
 		String expResult=null;
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
         
          assertEquals(expResult, result);
@@ -45,9 +45,9 @@ public class whitetest1 {
 	public void testQueryBridgeWords4() {
 		String words1="Next";
 		String words2="Some";
-		String expResult="we";
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		String expResult=" we";
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
         
          assertEquals(expResult, result);
@@ -59,8 +59,8 @@ public class whitetest1 {
 		String words1="To";
 		String words2="first";
 		String expResult=null;
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
         
          assertEquals(expResult, result);
@@ -71,8 +71,8 @@ public class whitetest1 {
 		String words1="First";
 		String words2="is";
 		String expResult=null;
-		ProcessText temp = new ProcessText();
-		temp.readText("G://graph//test.txt");
+		Control temp = new Control();
+		temp.readText("E://A//JAVA//fff.txt");
 		String  result=temp.queryBridgeWords(words1, words2);
          assertEquals(expResult, result);
 

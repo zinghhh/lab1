@@ -8,9 +8,9 @@ public class blacktextcalcshortpa {
 
 	@Test
 	public void testCalcShortestPath() {
-		ProcessText protes=new ProcessText();
+		Control protes=new Control();
 		protes.readText("E://A//JAVA//fff.txt");
-		String result="最短路径权值为：2  how-->next-->we";
+		String result="最短路径权值为：2   how-->next-->we";
 		assertEquals("用例1有问题",result,protes.calcShortestPath("How", "we"));
 		String result2=new String();
 		assertNotEquals("用例2有问题",result2,protes.calcShortestPath("Next", "#"));
